@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>home</title>
+    <style>
+      @font-face {
+        font-family: andis_regular;
+        src: url(\static\Andis_Regular\JAM_Type_Design_-_Andis_Regular.otf);
+      }
+      @font-face {
+        font-family: sensation;
+        src: url(\static\sansation\Sansation\Sansation_Light.ttf);
+      }
+
+        *{margin:0px; padding:0px; box-sizing: border-box;}
+        *::-webkit-scrollbar{display: none;}
+        body, html{min-height: 100vh;}
+        .col-1{width:8.33%;}
+        .col-2{width:16.66%;}
+        .col-3{width:25%;}
+        .col-4{width:33.33%;}
+        .col-5{width:41.66%;}
+        .col-6{width:50%;}
+        .col-7{width:58.33%;}
+        .col-8{width:66.66%;}
+        .col-9{width:75%;}
+        .col-10{width:83.33%;}
+        .col-11{width:91.66;}
+        .col-12{width:100%;}
+        .on-pc{display: auto;}
+        .grid{display:grid;}
+        .dbl-column{grid-template-columns:40% 60%;}
+        .flex{display:flex;}
+        .flex-centerize{
+          justify-content: center;
+          align-items: center;
+        }
+        .flex-column{flex-flow: column;}
+        .flex-evenly{justify-content: space-evenly;}
+        .flex-between{justify-content: space-between;}
+        .nav{max-height: 7vh;}
+        .full-page-height{min-height:100vh;}
+        .full-height{height:100%;}
+        .text-centerize{text-align: center;}
+        .writing-padding{padding:2px 4px;}
+        .wt{color:white;}
+        .no-edges{border-radius:5px;}
+        .nav-items{
+          font-size: x-large;
+          font-family: monospace;
+          background-color: rgba(0, 173, 180, 60%);
+          color: white;
+          box-shadow: 0px 0px 0px white;
+          border-radius: 5px;
+          transition: 0.4s;
+
+        }
+        .nav-items:hover{
+          border:1px solid white;
+          background-color: rgba(0, 173, 180, 100%);
+          box-shadow: 6px 6px 13px grey;
+          transition: 0.4s;
+          z-index: 10;
+        }
+        .lightgrey-bg{background-color: lightgrey;}
+        .white-bg{background-color: white;}
+        .stander-margin{margin: 8px;}
+        .no-overflow{overflow: auto;}
+        #main-contaier{
+          grid-template-columns: 65% 35% ;
+        }
+        #Manage{
+          font-size: 40px;
+          font-family: serif;
+          color:#393d46 ;
+          text-shadow: 2px 1px 4px #00adb4;
+        }
+        #get-started{
+          background-color:rgb(66, 255, 133);
+          outline-width:0px;
+          padding:2px 20px;
+          border: 1px solid white;
+          border-radius:5px;
+          font-size: 20px;
+        }
+        #check-advises{
+          background-color:rgb(253 247 52);
+          outline-width:0px;
+          padding:2px 20px;
+          border: 1px solid white;
+          border-radius:5px;
+          font-size: 20px;
+
+        }
+        #description{
+          width:100%;
+          height:100%;
+          position:absolute;
+          top:0px;
+          background-color:rgba(0,0,0,0.6);
+        }
+        .descriptive-items{
+          font-size: larger;
+          letter-spacing: 1.2px;
+          line-height: 1.6;
+          font-family: serif;
+          list-style: inside;
+        }
+        #phone-manage{
+          font-family: serif;
+          color: rgb(150 132 80);
+          font-style: italic;
+          text-shadow: 1px 1px 1px #00adb4;
+          font-size: x-large;
+        }
+        #more_options{
+          outline-width: 0px;
+          border: 1px solid white;
+          background-color:#ff626a;
+          margin: 8px;
+        }
+        #options{display: none;}
+        .on-phone{display:none;}
+        .phone-navbar{
+        }
+        @media screen and (max-width:700px) {
+          .on-pc{display:none;}
+          .on-phone{display:block;}
+        }
+        </style>
+        <script src="https://kit.fontawesome.com/01dd9deafe.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- on pc only -->
+    <div class="on-pc">
+      <div class="col-12 flex flex-evenly">
+        <div class="nav-items writing-padding stander-margin flex flex-centerize col-3">home</div>
+        <div class="nav-items writing-padding stander-margin flex flex-centerize col-3">daily missions</div>
+        <div class="nav-items writing-padding stander-margin flex flex-centerize col-3">progression report</div>
+        <div class="nav-items writing-padding stander-margin flex flex-centerize col-3">disabled</div>
+      </div>
+    </div>
+
+    <div class="grid dbl-column col-12 lightgrey-bg full-page-height on-pc">
+      <div class="flex flex-centerize  white-bg">
+        <img style="width:75%; height:auto;" src="\static\full-logo-white.jpg" alt="">
+      </div>
+      <div style="position:relative;" class="flex flex-evenly flex-column wt">
+        <img style="height: 100%; width:auto;" src="\static\youth.jpg" alt="">
+        <div id="description" class="flex flex-column flex-evenly">
+          <div id="Manage" class="col-12 flex flex-centerize text-centerize ">
+          <h2> Manage <br> your tasks </h2>
+          </div>
+          <div class="col-12 flex flex-centerize">
+            <ul class="descriptive-items">
+              <li>better task orgenization</li>
+              <li>easiest way to apply pomdoro method</li>
+              <li>diffrent advices taken from time managment books</li>
+              <li>faster productivity calculator</li>
+              <li>daily, weekly and monthly archive to follow your statistics </li>
+              <li> and much more comming soon </li>
+            </ul>
+          </div>
+          <div class="flex flex-centerize flex-evenly">
+            <button id="get-started"> Get Started </button>
+            <button id="check-advises"> check advices </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="phone-navbar on-phone">
+      <div class="col-12 flex flex-column flex-evenly">
+        <div class="flex flex-between">
+          <div class="nav-items writing-padding stander-margin flex flex-centerize col-10">home </div>
+          <button id="more_options" class="col-1 "><i class="fas fa-list"></i></button>
+        </div>
+        <div id="options">
+          <div class="nav-items writing-padding stander-margin flex flex-centerize col-10">daily missions</div>
+          <div class="nav-items writing-padding stander-margin flex flex-centerize col-10">progression report</div>
+          <div style="font-family:'Brush Script MT',cursive; font-size:18px;" class="writing-padding stander-margin flex flex-centerize col-12">welcome "username"</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="on-phone">
+      <div class="flex flex-centerize ">
+        <img style="width:100%; height:auto;" src="\static\check_for_phone.jpg" alt="">
+      </div>
+      <div class="no-overflow">
+        <div style="position:relative; height:63vh;" class="flex flex-evenly flex-column wt">
+          <img style="height: 100%; width:auto;" src="\static\youth.jpg" alt="">
+          <div id="description" class="flex flex-column flex-evenly">
+            <div id="phone-manage" class="col-12 flex flex-centerize text-centerize ">
+            <h2> Manage <br> your tasks </h2>
+            </div>
+            <div class="col-12 flex flex-centerize">
+              <ul class="descriptive-items writing-padding">
+                <li>better task orgenization</li>
+                <li>easiest way to apply pomdoro method</li>
+                <li>diffrent advices taken from time managment books</li>
+                <li>faster productivity calculator</li>
+                <li>daily, weekly and monthly archive to follow your statistics </li>
+                <li> and much more comming soon </li>
+              </ul>
+            </div>
+            <div class="flex flex-centerize flex-evenly">
+              <button id="get-started"> Get Started </button>
+              <button id="check-advises"> check advices </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#more_options').mousedown(function(){
+        $('#options').slideToggle(400)
+      })
+    })
+  </script>
+</html>
